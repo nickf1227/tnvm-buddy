@@ -1,14 +1,37 @@
 # tnvm-buddy
 A small python script to assist in migrating pre-25.04 VMs
-Below is a `README.md` file for the Python script provided earlier. This document explains the purpose, usage, and requirements of the script.
+https://www.truenas.com/docs/scale/gettingstarted/scalereleasenotes/
+
+This script helps reduce the amount of clicks needed to collect the information needed pre-migration. Rathr than going into the UI and clicking in each VM for each device, it simply dumps the contents of the database in a human readable format.
+For most up to date information click on the link above, but copied here for users of this script:
+
+```
+Preparing to Migrate VMs from 24.10
+Screenshot or record existing VM configuration(s).
+
+Go to Virtualization and click on a VM to expand that row. Click  Edit to open the Edit VM screen and note the existing configuration. Save your configuration settings in an external location to reference later. These settings do not migrate and must be recreated after upgrading to 25.04.
+
+Record the existing zvol storage location and virtual device configuration.
+
+Go to Virtualization and click on a VM to expand that row. Click device_hub Devices. Click more_vert in the Disk row and select Edit. Note the configured path in Zvol as well as the storage Mode and the Disk Sector Size. Continue to note all other VM devices and associated configuration settings. Record this information in an external location along with the configuration settings gathered above.
+
+Locate or download the required iso image files.
+
+Access the VM via Display or Serial Shell and confirm the installed OS and version. Refer to documentation for the installed OS if needed to locate the installed version.
+
+If the installed image (iso) file is stored on the TrueNAS system or in an external location, note this path and record it along with the other configuration settings. If needed, download a fresh image file matching the installed OS and Version
+```
+
 
 ---
 
 ## Usage
 
-### 1. Clone the Repository (if applicable)
+### Clone the Repository
 
-If this script is part of a repository, clone it to your local machine:
+Must be done as `root` in a location with write access such as `/root/` or `/mnt/tank/scripts`
+
+```git clone https://github.com/nickf1227/tnvm-buddy.git && cd tnvm-buddy && python3 tnvmbuddy.py```
 
 
 ### View the Output
