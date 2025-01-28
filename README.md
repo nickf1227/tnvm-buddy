@@ -4,8 +4,9 @@ A small python script to assist in migrating pre-25.04 VMs
 
 This script helps reduce the amount of clicks needed to collect the information needed pre-migration. Rather than going into the UI and clicking in each VM for each device, it simply dumps the contents of the database in a human readable format.
 
-##https://www.truenas.com/docs/scale/gettingstarted/scalereleasenotes/
-##For most up to date information click on the link above, but copied here for users of this script:
+## https://www.truenas.com/docs/scale/gettingstarted/scalereleasenotes/
+
+## For most up to date information click on the link above, but copied here for users of this script:
 
 ```
 Preparing to Migrate VMs from 24.10
